@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.web.bind.annotation.PathVariable;
+
 @Entity
 @Table(name = "client1")
 public class InsuranceEntity {
@@ -16,6 +18,8 @@ public class InsuranceEntity {
 	private String person_name;
 	private String term;
 	private String Hinsurance;
+	
+		
 	public Integer getId() {
 		return id;
 	}
